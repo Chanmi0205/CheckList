@@ -32,4 +32,4 @@ public class MemberDAO extends JDBConnect {
 		
 	}
 	
-}
+}	

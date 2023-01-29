@@ -47,6 +47,8 @@
         	ps.executeUpdate();
 
            	jdbc.close();
+	
+           	session.setAttribute("ID", ID);
             session.setAttribute("name", name);
             response.sendRedirect("main.jsp");
         }

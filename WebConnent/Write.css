@@ -1,0 +1,223 @@
+	@charset "UTF-8";
+	
+	*{
+	    box-sizing: border-box;
+	    margin: 0px;
+	}
+	
+	body {
+	    background-color: #333333;
+	    position: absolute;
+	    
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	
+	
+	}
+	
+	form {
+		
+	    grid-template-rows: 30px 1px 30px 30px 80px 15px 30px 15px 15px 30px 15px 15px 30px 15px 30px 1px 30px; 
+	    grid-template-columns: 15px 80px 160px 80px 160px 80px 160px 80px 160px 15px; 
+	    
+	    grid-row-gap: 15px;
+	    grid-column-gap: 10px;
+	    display: grid;
+	}
+	
+	P, label, .title {
+	    color: white;
+	}
+	
+	input, .keyword, button {
+	    border: 0;
+	    background-color: #303030;
+	    color: white;
+	}
+	
+	.PT1, .PT2 {
+	    color: red;
+	    padding-bottom: 15px;
+	    text-align: center;
+	}
+	
+	.DTYT, .DTMT, .DTDT, .SHT, .SMT, .EHT, .EMT {
+	    padding-left: 15px;
+	}
+	
+	.title {
+	    grid-row: 1/2;
+	    grid-column: 1/11;
+	}
+	
+	.width1 {
+	    grid-row: 2/3;
+	    grid-column: 1/11;
+	}
+	
+	.check {
+	    margin-top: 2px;
+	    grid-row: 3/4;
+	    grid-column: 1/2;
+	}
+	
+	.textCheck {
+	    padding-top: 3px;
+	    grid-row: 3/4;
+	    grid-column: 2/3;
+	}
+	
+	.checkP {
+	    padding-top: 3px;
+	    grid-row: 3/4;
+	    grid-column: 3/11;
+	}
+	
+	.key {
+	    padding-top: 10px;
+	    grid-row: 4/5;
+	    grid-column: 1/9;
+	}
+	
+	.keyEdit {
+	    grid-row: 4/5;
+	    grid-column: 9/10;
+	}
+	
+	.keyEditCheck {
+	    grid-row: 4/5;
+	    grid-column: 10/11;
+	}
+	
+	.keyword {
+	    grid-row: 5/6;
+	    grid-column: 1/11;
+	}
+	
+	.textDate {
+	    grid-row: 6/7;
+	    grid-column: 1/11;
+	}
+	
+	.DTY {
+	    grid-row: 7/8;
+	    grid-column: 2/3;
+	}
+	
+	.DTYT {
+	    grid-row: 7/8;
+	    grid-column: 3/4;
+	}
+	
+	.DTM {
+	    grid-row: 7/8;
+	    grid-column: 4/5;
+	}
+	
+	.DTMT {
+	    grid-row: 7/8;
+	    grid-column: 5/6;
+	}
+	
+	.DTD {
+	    grid-row: 7/8;
+	    grid-column: 6/7;
+	}
+	
+	.DTDT {
+	    grid-row: 7/8;
+	    grid-column: 7/8;
+	}
+	
+	.PT1 {
+	    grid-row: 8/9;
+	    grid-column: 1/11;
+	}
+	
+	.start {
+	    grid-row: 9/10;
+	    grid-column: 1/6;
+	}
+	
+	.SH {
+	    grid-row: 10/11;
+	    grid-column: 2/3;
+	}
+	
+	.SHT {
+	    grid-row: 10/11;
+	    grid-column: 3/4;
+	}
+	
+	.SM {
+	    grid-row: 10/11;
+	    grid-column: 4/5;
+	}
+	
+	.SMT {
+	    grid-row: 10/11;
+	    grid-column: 5/6;
+	}
+	
+	.End {
+	    padding-top: 2px;
+	    padding-left: 149px;
+	    grid-row: 9/10;
+	    grid-column: 5/11;
+	}
+	
+	.EH {
+	    grid-row: 10/11;
+	    grid-column: 6/7;
+	}
+	
+	.EHT {
+	    grid-row: 10/11;
+	    grid-column: 7/8;
+	}
+	
+	.EM {
+	    grid-row: 10/11;
+	    grid-column: 8/9;
+	}
+	
+	.EMT {
+	    grid-row: 10/11;
+	    grid-column: 9/10;
+	}
+	
+	.PT2 {
+	    grid-row: 11/12;
+	    grid-column: 1/11;
+	}
+	
+	.t1 {
+	    grid-row: 12/13;
+	    grid-column: 1/11;
+	}
+	
+	.text {
+	    grid-row: 13/14;
+	    grid-column: 1/11;
+	}
+	
+	.t2 {
+	    grid-row: 14/15;
+	    grid-column: 1/11;
+	}
+	
+	.memo {
+	    grid-row: 15/16;
+	    grid-column: 1/11;
+	}
+	
+	.width2 {
+	    grid-row: 16/17;
+	    grid-column: 1/11;
+	}
+	
+	.create {
+	    grid-row: 17/18;
+	    grid-column: 1/11;
+	}
