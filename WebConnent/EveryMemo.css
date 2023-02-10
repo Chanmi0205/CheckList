@@ -1,0 +1,110 @@
+	@charset "UTF-8";
+	
+	*{
+	    box-sizing: border-box;
+	    margin: 0px;
+	}
+	
+	body {
+	    background-color: #333333;
+	    margin-left: 115px;
+	    margin-top: 70px;
+	
+	}
+	
+	p, a {
+	    color: white;
+	}
+	
+	input, button {
+	    border: 0;
+	    background-color: #2c2c2c;
+	    color: white;
+	}
+	
+	.A {
+		margin: 20px;
+	    display: grid;
+	    grid-template-columns: 150px 780px 100px; 
+	    grid-template-rows: 30px 5px 1px;
+	
+	}
+	
+	.EveryMemo {
+		grid-row: 1/2;
+		grid-column: 1/2;
+	}
+	
+	.member { 
+		text-align: right;
+		grid-row: 1/2;
+		grid-column: 3/4;
+	}
+	
+	.hr1 {
+		grid-row: 3/4;
+		grid-column: 1/4;
+	}
+	
+	
+	.advertisement {
+		  position: fixed;
+		  top: 50px;
+		  right: 80px;
+		  height: 580px;
+		  width: 200px;
+		  background: gray;
+	}	
+	.B {
+		margin: 20px;
+	    display: grid;
+	    grid-template-columns: 1050px; 
+	    grid-template-rows: 1px;
+	
+	    grid-column-gap: 10px;
+	}
+	.hr2 {
+		grid-row: 1/2;
+		grid-column: 1/2;
+	}
+	
+	
+	
+	.memo {   
+	    margin: 28px;
+		margin-left: 35px;
+	    display: grid;
+	    
+	    grid-template-columns: 100px 1px 798px 1px 100px;
+	    grid-template-rows: 30px;
+	    
+	}
+	
+	.date {
+	    text-align: left;
+	    grid-row: 1/2;
+	    grid-column: 1/2;
+	}
+	
+	.t7 {
+	    grid-row: 1/2;
+	    grid-column: 2/3;
+	}
+	
+	.memoText {
+	    padding-top: 1px;
+	    padding-left: 15px;
+	    grid-row: 1/2;
+	    grid-column: 3/4;
+	}
+	
+	.t8 {
+	    grid-row: 1/2;
+	    grid-column: 4/5;
+	}
+	
+	.name {
+	    text-align: right;
+	    grid-row: 1/2;
+	    grid-column: 5/6;
+	}

@@ -11,7 +11,7 @@ import java.sql.DriverManager;
 
 public class JDBConnect {
 	
-	public Connection conn;
+ 	public Connection conn;
 	public Statement stmt;
 	public PreparedStatement psmt;
 	public ResultSet rs;

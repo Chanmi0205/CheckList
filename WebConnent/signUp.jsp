@@ -19,11 +19,11 @@
 		
 		       <p class="signUpText">sign up</p>
 		       
-		       <label for="ID" class="IDLabel">ID</label> <input type="text" class="ID" id="ID" name="ID" placeholder="ID">
+		       <label for="ID" class="IDLabel">ID</label> <input type="text" class="ID" id="ID" name="ID" placeholder="ID" maxlength="15">
 		
-		       <label for="pw" class="pwLabel">pw</label> <input type="password" class="pw" id="pw" name="PW" placeholder="password">
+		       <label for="pw" class="pwLabel">pw</label> <input type="password" class="pw" id="pw" name="PW" placeholder="password" maxlength="30">
 		   
-		       <label for="name" class="name">name</label> <input type="text" class="name" id="name" name="name" placeholder="name">
+		       <label for="name" class="name">name</label> <input type="text" class="name" id="name" name="name" placeholder="name" maxlength="15">
 		
 		       <input type="submit" class="signUp" value="sign up">
 		

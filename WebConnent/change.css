@@ -1,0 +1,102 @@
+	@charset "UTF-8";
+	
+	*{
+    box-sizing: border-box;
+    margin: 0px;
+	}
+	
+	body {
+	    background-color: #333333;
+	    position: absolute;
+	    
+	    top: 48%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	
+	    grid-template-columns: 200px 750px 200px;
+	    grid-template-rows: 30px 1px 70px 70px 70px 1px;
+	
+	    grid-row-gap: 35px;
+	    grid-column-gap: 10px;
+	    display: grid;
+	}
+	
+	p {
+	    color: white;
+	    margin-top: 18px;
+	}
+	
+	input, button {
+	    border: 0;
+	    background-color: #2c2c2c;
+	    color: white;
+	}
+	
+	.title {
+	    grid-row: 1/2;
+	    grid-column: 1/2;
+	}
+	
+	.name {
+	    text-align: right;
+	    grid-row: 1/2;
+	    grid-column: 3/4;
+	}
+	
+	.hr1 {
+	    grid-template-columns: 750px 200px;
+	    grid-template-rows: 30px 30px;
+	
+	    grid-row-gap: 10px;
+	    display: grid;
+	
+	    grid-row: 2/3;
+	    grid-column: 1/4;
+	}
+	
+	.IDInput, .nameInput, .PW {
+	    grid-row: 1/2;
+	    grid-column: 1/4;
+	}
+	
+	.IDS, .nameS, .PWS {
+	    grid-row: 2/3;
+	    grid-column: 3/4;
+	}
+	
+	.f1 {
+	    grid-template-columns: 750px 200px;
+	    grid-template-rows: 30px 30px;
+	
+	    grid-row-gap: 10px;
+	    display: grid;
+	
+	    grid-row: 3/4;
+	    grid-column: 1/4;
+	}
+	
+	.f2 {
+	    grid-template-columns: 750px 200px;
+	    grid-template-rows: 30px 30px;
+	
+	    grid-row-gap: 10px;
+	    display: grid;
+	
+	    grid-row: 4/5;
+	    grid-column: 1/4;
+	}
+	
+	.f3 {
+	    grid-template-columns: 750px 200px;
+	    grid-template-rows: 30px 30px;
+	
+	    grid-row-gap: 10px;
+	    display: grid;
+	    grid-row: 5/6;
+	    grid-column: 1/4;
+	}
+	
+	.hr2 {
+	    grid-row: 6/7;
+	    grid-column: 1/4;
+	}
