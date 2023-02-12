@@ -13,7 +13,7 @@
 	int result = dao.IDChange(IDS, ID);
    	dao.close();
 
-	if(result==1) {		
+	if(result!=0) {		
    		session.setAttribute("ID", IDS);
    		System.out.println("ID 변경 완료");	
    		response.sendRedirect("main.jsp");

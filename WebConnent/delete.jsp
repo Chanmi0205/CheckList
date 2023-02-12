@@ -1,5 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ page import="DB.MemberDAO" %>
+<%@ page import="DB.MemberDTO" %>
+<%
+
+	MemberDAO dao = new MemberDAO(application);
+	MemberDTO dto = dao.call(session.getAttribute("ID").toString());
+	dao.close();
+%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +21,7 @@
 <body>
 
     <p class="title">Setting</p>
-    <p class="name"><%=session.getAttribute("name")%>님</p>
+    <p class="name"><%=dto.getName()%>님</p>
     
     <hr class="hr1">
     

@@ -6,7 +6,7 @@
 <%@ page import="DB.MemoDTO" %>
 <%@ page import="java.util.Date" %>
 <%@ page import="java.text.SimpleDateFormat" %>
-<%
+<%	
 		Date nowTime = new Date();
 		SimpleDateFormat sf = new SimpleDateFormat("yyyy년 MM월 dd일");
 %>
@@ -20,7 +20,7 @@
 
     <link rel="stylesheet" href="main.css">
 </head>
-<body>
+<body>	
     
     <div class="A">
 	    <p class="memo">Memo</p>
@@ -38,6 +38,7 @@
 	    <p class="t1">|</p>
 	    <a href="signUp.jsp" class="signUp">sign up</a>
     
+    
     <%
 		} else {
 
@@ -48,8 +49,6 @@
 	
 	<p class="name"> <%=dto.getName()%>님 </p>
     </div>
-
-
 
     <div class="main">
 	<% 

@@ -26,8 +26,9 @@
 	    </div>
     
     </form>
-    
+    <p>
 	<%= request.getAttribute("LoginErrMsg") == null ? " " : request.getAttribute("LoginErrMsg") %>
+    </p>
 
 </body>
 </html>

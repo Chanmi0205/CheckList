@@ -34,14 +34,21 @@ public class MemberDAO extends JDBConnect {
 	public void deleteID(String ID) {
 		
 		int result = 0;
-		String sql = "DELETE FROM member WHERE ID=?";
+		String sql = "DELETE member WHERE ID=?";
+		String sql2 = "DELETE memo WHERE ID=?";
 		
 		try {
-			 psmt = conn.prepareStatement(sql);
+			 psmt = conn.prepareStatement(sql2);
 			 psmt.setString(1, ID);
 			 result = psmt.executeUpdate();
 			 
-			 if (result == 1) {
+			 if(result==0 || result==1) {
+				 psmt = conn.prepareStatement(sql);
+				 psmt.setString(1, ID);
+				 result = psmt.executeUpdate();
+			 }
+			 
+			 if (result == 2) {
 				 System.out.println("계정 삭제 완료");
 			 }
 			 
@@ -55,10 +62,10 @@ public class MemberDAO extends JDBConnect {
 		String sql = "UPDATE member SET ID=? WHERE ID=?";
 		
 		try {
-			 psmt = conn.prepareStatement(sql);
-			 psmt.setString(1, IDS);
-			 psmt.setString(2, ID);
-			 result = psmt.executeUpdate();
+		psmt = conn.prepareStatement(sql);
+		 psmt.setString(1, IDS);
+		 psmt.setString(2, ID);
+		 result = psmt.executeUpdate();
 			 
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -129,6 +136,32 @@ public class MemberDAO extends JDBConnect {
 		}
 	
 		return dto;
+	}
+	
+	public int signUp(String ID, String PW, String name) {
+		
+		int result = 0;
+		 String sql1 = "SELECT ID FROM member WHERE ID=?";
+	     String sql2 = "INSERT INTO member(ID, PW, name) VALUES(?, ?, ?)";
+		try {
+
+			psmt = conn.prepareStatement(sql1);
+			psmt.setString(1, ID);
+			rs = psmt.executeQuery();
+			
+			if(!rs.next()) {							
+				psmt = conn.prepareStatement(sql2);
+				psmt.setString(1, ID);
+				psmt.setString(2, PW);
+				psmt.setString(3, name);
+				result = psmt.executeUpdate();
+			}
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return result;
+		
 	}
 
 }	

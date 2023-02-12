@@ -13,6 +13,8 @@
     	int num = Integer.parseInt(request.getParameter("num"));
 		MemoDAO dao = new MemoDAO(application);
 		MemoDTO dto = dao.call2(num);
+		MemberDAO dao2 = new MemberDAO(application);
+		MemberDTO dto2 = dao2.call(session.getAttribute("ID").toString());
 		dao.close();    	
 %>
 <!DOCTYPE html>
@@ -29,8 +31,8 @@
 	if (session.getAttribute("ID") != null) {		
 	System.out.println(num);	
 	%>
-	    <P class="name"><%=session.getAttribute("ID")%>님</P>
 	    <form action="memoProcess.jsp">
+	    <P class="name"><%=dto2.getName()%>님</P>
 		    <p class="memoText">Memo</p>
 		
 		    <hr class="hr1">

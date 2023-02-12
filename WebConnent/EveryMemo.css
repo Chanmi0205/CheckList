@@ -28,6 +28,7 @@
 	    grid-template-columns: 150px 780px 100px; 
 	    grid-template-rows: 30px 5px 1px;
 	
+	    grid-column-gap: 10px;
 	}
 	
 	.EveryMemo {

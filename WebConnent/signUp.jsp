@@ -29,12 +29,14 @@
 		
 		   </div>
 		   
+		   <p>
 		   <%
 		      String error = request.getParameter("error");
 		      if (error != null){
 		        out.println("중복된 ID입니다.");
 		      }
 		   %>
+		   </p>
 		   
 	</form>
 
